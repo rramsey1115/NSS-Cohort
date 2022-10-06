@@ -17,6 +17,7 @@ The main learning goal for this book is the use of `git` and Github for versioni
 | 9 | [Objectifying the Fish](./chapters/MA_DATA_STRUCTURES.md) |
 | 10 | [Exporting Fish](./chapters/MA_EXPORTING_FISH.md) |
 | 11 | [HTML Representations of Data](./chapters/MA_CREATING_FISH_COMPONENTS.md) |
+| 🎓  | [Self Assessment](../projects/tier-1/modern-farm/)  
 
 ## 👩‍👩‍👧‍👦 Team Collaboration Projects
 
