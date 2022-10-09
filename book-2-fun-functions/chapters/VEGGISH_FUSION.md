@@ -6,7 +6,7 @@ Since the restaurant needs to see which fish are available at the foshmonger mar
 
 ## Restaurant Menu
 
-This module must import and invoke the function that is exported by the fish monger module. This module should also define a function that build an HTML version of their daily menu. The function should return the generated HTML string. The function must be named `fishMenu`.
+This module must import and invoke the function that is exported by the fish monger module. This module should also define a function that builds an HTML version of their daily menu. The function should return the generated HTML string. The function must be named `fishMenu`.
 
 1. Each day, the chef visits the monger and specifies the maximum price she is able to spend per fish.
 1. If the monger has any fish at that price point or less, the chef buys 50% of the existing inventory.
