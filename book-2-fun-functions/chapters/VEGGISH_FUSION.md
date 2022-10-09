@@ -2,7 +2,7 @@
 
 ## Importing Functions
 
-Since the restaurant needs to see which fish are available at the foshmonger marjet, it will need to import the function that is exported from that module.
+Since the restaurant needs to see which fish are available at the foshmonger market, it will need to import the function that is exported from that module.
 
 ## Restaurant Menu
 
