@@ -4,7 +4,7 @@ As DeShawn Dog Walking platform grows in popularity, some of the walkers decide 
 
 Currently there are many walkers, and the city they are assigned to is a property of the walker. The project needs to adapt to allow ambitious walkers to work multiple cities.
 
-Your first insinct would be to change the `city` property of a walker to `cities`, and change its type from `varchar` to `array`.
+Your first instinct would be to change the `city` property of a walker to `cities`, and change its type from `varchar` to `array`.
 
 Unfortunately, nested collections is not supported in the vast majority of database systems that you will use in your career. Therefore, you cannot use that strategy here.
 
