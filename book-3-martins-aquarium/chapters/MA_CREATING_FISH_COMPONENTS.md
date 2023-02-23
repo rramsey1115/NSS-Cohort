@@ -23,9 +23,9 @@ export const FishList = () => {
     const fishes = invokeTheRightFunctionHere()
 
     // Start building a string filled with HTML syntax
-    let htmlString = '<article class="fishList">'
+    const htmlString = '<article class="fishList">'
 
-    // Create HTML representations of each fish here
+    // Create HTNL representations of each fish here
     for (const fish of fishes) {
 
         // Why is there a backtick used for this string?
