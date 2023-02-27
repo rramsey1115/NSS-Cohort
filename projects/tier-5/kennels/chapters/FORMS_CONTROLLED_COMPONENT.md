@@ -14,16 +14,16 @@ Refactor the AnimalList component to include an *Add Animal* button that will ch
 
 ```jsx
 // Add this import at the top
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 // Invoke the useHistory() hook function
-const history = useHistory()
+const history = useNavigate()
 
 return (
     <>
       <h2>Animals</h2>
       <button onClick={
-        () => history.push("/animals/create")
+        () => navigate("/animals/create")
       }>
             Add Animal
       </button>
@@ -55,13 +55,17 @@ Create the new route that will respond when the button click changes the URL to 
 
 ```jsx
 <AnimalProvider>
-    <Route exact path="/animals">
-        <AnimalList />
-    </Route>
+    <Routes>
+            <Route path="/" element={
+                <>
+                    <Outlet />
+                </>
+            }>
 
-    <Route exact path="/animals/create">
-      <AnimalForm />
-    </Route>
+                <Route path="animals" element={ <AnimalList /> } />
+                <Route path="animals/create" element={ <AnimalForm /> } />
+            </Route>
+        </Routes>
 </AnimalProvider>
 
 ```
@@ -73,12 +77,12 @@ When you add an animal, you immediately want to assign that animal to a location
 > ##### `src/components/animal/AnimalForm.js`
 
 ```js
-import React, { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { LocationContext } from "../location/LocationProvider"
 import { AnimalContext } from "../animal/AnimalProvider"
 import { CustomerContext } from "../customer/CustomerProvider"
 import "./Animal.css"
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const AnimalForm = () => {
   const { addAnimal } = useContext(AnimalContext)
@@ -98,7 +102,7 @@ export const AnimalForm = () => {
     customerId: 0
   });
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   /*
   Reach out to the world and get customers state
@@ -141,7 +145,7 @@ export const AnimalForm = () => {
         customerId: customerId
       }
       addAnimal(newAnimal)
-        .then(() => history.push("/animals"))
+        .then(() => navigate("/animals"))
     }
   }
 
