@@ -24,8 +24,8 @@ In this book, you will be introduced to three concepts.
 
 | # | Project Name | Summary |
 |--|--|--|
-| 1 | [Bey's Blog](https://codesandbox.io/s/book-4-beys-blog-uxyuq) | You will be building a modular Web application that lists of all of articles for Bey's Blog along with the authors and categories. |
-| 2 | [Magnum TV](https://codesandbox.io/s/book-4-magnum-tv-96byt) | Magnum TV is a new service that wil revolutionize the way people watch television. You will build a modular Web application that show the recommended shows to watch for all of the platform's users. |
+| 1 | Bey's Blog | You will be building a modular Web application that lists of all of articles for **_Bey's Blog_** along with the authors and categories. |
+| 2 | Magnum TV | **_Magnum TV_** is a new service that wil revolutionize the way people watch television. You will build a modular Web application that show the recommended shows to watch for all of the platform's users. |
 
 ## 🧭 Explorer Chapters
 
